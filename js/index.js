@@ -61,8 +61,15 @@ function sendWhatsAppMessage(event) {
         .filter(item => item.checked)
         .map(item => item.value);
 
+    const juiceItems = Array.from(form.elements["juice[]"])
+        .filter(item => item.checked)
+        .map(item => item.value);
+
+    const breakfastItems = Array.from(form.elements["breakfast[]"])
+        .filter(item => item.checked)
+        .map(item => item.value);
     // Prepare the message body
-    const message = "Selected Items :" + "\n\nPayasa:\n" + payasaItems + "\n\nSweets:\n" + sweetItems + "\n\nPalya:\n" + palyaItems + "\n\nKosambari:\n" + kosambariItems + "\n\nStarters:\n" + startersItems + "\n\nRoti:\n" + rotiItems + "\n\nCurry:\n" + curryItems + "\n\nRice Items:\n" + riceItems + "\n\nRasam:\n" + rasamItems + "\n\nPaan:\n" + paanItems + "\n\nDessert:\n" + dessertItems + "\n\nAddons:\n" + addonsItems + "\n";
+    const message = "Selected Items :" + "\n\nPayasa:\n" + payasaItems + "\n\nSweets:\n" + sweetItems + "\n\nPalya:\n" + palyaItems + "\n\nKosambari:\n" + kosambariItems + "\n\nStarters:\n" + startersItems + "\n\nRoti:\n" + rotiItems + "\n\nCurry:\n" + curryItems + "\n\nRice Items:\n" + riceItems + "\n\nRasam:\n" + rasamItems + "\n\nPaan:\n" + paanItems + "\n\nDessert:\n" + dessertItems + "\n\nAddons:\n" + addonsItems + "\n\nWelcome Juice:\n" + juiceItems + "\n\nBreakfast:\n" + breakfastItems + "\n\n";
 
     // Open the WhatsApp API link
     const whatsappNumber = "+919964381449";
