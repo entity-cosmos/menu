@@ -72,7 +72,7 @@ function sendWhatsAppMessage(event) {
     const message = "Selected Items :" + "\n\nPayasa:\n" + payasaItems + "\n\nSweets:\n" + sweetItems + "\n\nPalya:\n" + palyaItems + "\n\nKosambari:\n" + kosambariItems + "\n\nStarters:\n" + startersItems + "\n\nRoti:\n" + rotiItems + "\n\nCurry:\n" + curryItems + "\n\nRice Items:\n" + riceItems + "\n\nRasam:\n" + rasamItems + "\n\nPaan:\n" + paanItems + "\n\nDessert:\n" + dessertItems + "\n\nAddons:\n" + addonsItems + "\n\nWelcome Juice:\n" + juiceItems + "\n\nBreakfast:\n" + breakfastItems + "\n\n";
 
     // Open the WhatsApp API link
-    const whatsappNumber = "+919964381449";
+    const whatsappNumber = "+917676555936";
     const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, "_blank");
 }
